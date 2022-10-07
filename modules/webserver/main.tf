@@ -71,9 +71,6 @@ resource "aws_instance" "myapp-server" {
 
   key_name = "key1"
 
-  user_data = file("entry-point.sh")
-
-
   tags = {
     "Name" = "${var.env_prefix}-servers"
   }
