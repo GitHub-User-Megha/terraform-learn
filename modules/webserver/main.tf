@@ -78,7 +78,7 @@ resource "aws_instance" "myapp-server" {
 
 variable "chars" {
   type = list(string)
-  default = [ "HELLO","WORLD,","LET'S","DO","THIS" ]
+  default = [ "HELLO","WORLD,","LET'S","DO","THIS","NOW" ]
 }
 
 output "chars-out" {
