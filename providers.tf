@@ -1,6 +1,6 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAQ3ZVEHPYR7D5PJ6A"
-  secret_key = "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"
+  access_key = "AKIAWB6IZPYGM4SX75SJ"
+  secret_key = "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"
 }
 //to connect to AWS using Keys

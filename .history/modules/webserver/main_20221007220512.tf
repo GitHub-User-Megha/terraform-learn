@@ -75,12 +75,3 @@ resource "aws_instance" "myapp-server" {
     "Name" = "${var.env_prefix}-servers"
   }
 }
-
-variable "chars" {
-  type = list(string)
-  default = [ "HELLO","WORLD,","LET'S","DO","THIS" ]
-}
-
-output "chars-out" {
-  value = join(" ",var.chars)
-}
