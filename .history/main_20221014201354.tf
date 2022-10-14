@@ -26,7 +26,3 @@ module "myapp-webserver" {
   instance_type = var.instance_type
   subnet_id = module.myapp-subnet.subnet.id
 }
-
-output "functions" {
-  value = timestamp()
-}

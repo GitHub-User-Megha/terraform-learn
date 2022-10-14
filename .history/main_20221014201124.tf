@@ -7,7 +7,7 @@ resource "aws_vpc" "myapp-vpc" {
     "Name" = "${var.env_prefix}-vpc"
   }
 }
-//modules 
+
 module "myapp-subnet" {
   source = "./modules/subnet"
   subnet_cidr_block=var.subnet_cidr_block
@@ -25,8 +25,4 @@ module "myapp-webserver" {
   my_ip = var.my_ip
   instance_type = var.instance_type
   subnet_id = module.myapp-subnet.subnet.id
-}
-
-output "functions" {
-  value = timestamp()
 }
